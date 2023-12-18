@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 15:43:18 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 16:25:22 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,6 @@ bool	cd(const char *entered_path_arg);
 
 // pwd.c
 bool	pwd(void);
+
+// export.c
+bool	export(const char *env_pair);
