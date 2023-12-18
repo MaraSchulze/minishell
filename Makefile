@@ -6,7 +6,7 @@
 #    By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/18 08:57:25 by fbock             #+#    #+#              #
-#    Updated: 2023/12/18 14:08:18 by fbock            ###   ########.fr        #
+#    Updated: 2023/12/18 15:45:26 by fbock            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,9 @@ OBJDIR	:= objs
 LIBDIR	:= libs
 
 SRCS 	:= $(SRCDIR)/minishell.c \
-$(SRCDIR)/input_handling/input_utils.c
-$(SRCDIR)/parsing/parsing_main.c
+$(SRCDIR)/input_handling/input_utils.c \
+$(SRCDIR)/parsing/parsing_main.c \
+$(SRCDIR)/builtins/cd.c $(SRCDIR)/builtins/echo.c $(SRCDIR)/builtins/export.c $(SRCDIR)/builtins/pwd.c
 
 OBJS	:= $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRCS))
 DOBJS   := $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.d.o,$(SRCS))
