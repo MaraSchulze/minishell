@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 13:02:16 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 13:39:23 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,6 @@ typedef struct s_pipe {
 	char 		*input_file;
 	char		*output_file;
 }	t_pipe;
+
+// input_utils.c
+char	*read_a_line(char *prompt);

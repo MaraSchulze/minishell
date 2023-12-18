@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.c                                        :+:      :+:    :+:   */
+/*   input_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 13:39:03 by fbock            ###   ########.fr       */
+/*   Created: 2023/12/18 13:38:47 by fbock             #+#    #+#             */
+/*   Updated: 2023/12/18 13:39:10 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int	main(char **envp)
+char *read_a_line(char *prompt)
 {
-	t_pipe 	pipe_struct;
 	char	*entered_line;
-	// handlers
 
 	while (1)
 	{
-		entered_line = read_a_line("minishell$ ");
-		add_history(entered_line);
-		pipe_struct = parse_line(entered_line);
-		execute_line(pipe_struct);
+		entered_line = readline(prompt);
+		if (!entered_line)
+			continue ;
+		if (!(*entered_line))
+		{
+			free(entered_line);
+			continue ;
+		}
+		break ;
 	}
-
-	return (0);
+	return (entered_line);
 }
