@@ -6,13 +6,13 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 15:43:49 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 19:11:27 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 19:35:00 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-static	size_t	get_env_length(void)
+size_t	get_env_length(void)
 {
 	extern char	**environ;
 	size_t		env_size;
