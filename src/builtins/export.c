@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 15:43:49 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 17:10:34 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 17:31:29 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ static bool set_new_environ(char* new_pair, char **new_environ,
 		free(new_environ);
 		return(false);
 	}
-	if (!copy_old_env(environ, new_environ, size))
+	if (!copy_old_env(old_environ, new_environ, size))
 	{
 		free(new_env_var_heap);
 		return (false);
@@ -81,7 +81,7 @@ static void	free_old_env(char **old_env)
 }
 
 // call for each pair of variable=value to export it to the env
-bool	export(const char *env_pair)
+bool	export(char *env_pair)
 {
 	extern char **environ;
 	char		**old_env_buffer;

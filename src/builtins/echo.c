@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 14:58:11 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 15:34:43 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 17:30:36 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ bool	echo(const char *after_echo, bool n_flag)
 		error = printf("%s", after_echo);
 	if (error < 0)
 	{
-		perror("Error printing echo.")
+		perror("Error printing echo.");
 		return (false);
 	}
 	return (true);

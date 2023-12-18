@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 16:25:22 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 17:31:36 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <termios.h>
+#include "libft.h"
 
 #define SHELL_PROMPT "minishell$"
 #define	CWD_BUFFER_SIZE 1000
@@ -56,4 +57,4 @@ bool	cd(const char *entered_path_arg);
 bool	pwd(void);
 
 // export.c
-bool	export(const char *env_pair);
+bool	export(char *env_pair);
