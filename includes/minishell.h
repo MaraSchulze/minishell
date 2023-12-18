@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 19:35:07 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 19:56:19 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,3 +63,6 @@ size_t	get_env_length(void);
 
 // unset.c
 bool	unset(char *variable_name);
+
+// env.c
+bool	env(void);
