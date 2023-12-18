@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 16:19:13 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 17:12:42 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(int argc, char **argv, char **envp)
 	char	*entered_line;
 
 	// signal handlers
-	export("test", "test");
+	export("test_prog=success");
 	return (0);
 	// while (1)
 	// {
