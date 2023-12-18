@@ -6,13 +6,14 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:17:21 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 13:18:10 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 14:01:15 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-void	parse_line(void)
+void	parse_line(char *entered_line)
 {
+
 
 }

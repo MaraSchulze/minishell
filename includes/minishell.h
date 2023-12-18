@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 13:57:09 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 14:00:02 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <termios.h>
+
+#define SHELL_PROMPT "minishell$"
 
 typedef struct s_process {
 	char *name;
