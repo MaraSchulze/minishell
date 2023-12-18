@@ -6,21 +6,22 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 13:06:36 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 13:26:14 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int	main(int argc, char **argv, char **envp)
+int	main(char **envp)
 {
-	t_pipe pipe_struct;
-
+	t_pipe 	pipe_struct;
+	char	*entered_line;
 	// handlers
 
 	while (1)
 	{
-		pipe_struct = parse_line(void);
+		entered_line = readline("minishell$ ");
+		pipe_struct = parse_line(entered_line);
 		execute_line(pipe_struct);
 	}
 
