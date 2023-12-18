@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 15:16:47 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 15:31:27 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@
 
 typedef struct s_process {
 	char 	*name;
-	char	*path;
 	char 	**argv;
 	char 	**env;
 }	t_process;
@@ -48,3 +47,6 @@ char	*read_a_line(char *prompt);
 
 // echo.c
 void	echo(const char *after_echo, bool n_flag);
+
+// cd.c
+bool	cd(const char *entered_path_arg);
