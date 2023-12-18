@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 13:32:35 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 13:33:22 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(char **envp)
 	while (1)
 	{
 		entered_line = readline("minishell$ ");
-		if (!entered_line || !(*entered_line))
+		if (!entered_line || !(*entered_line))  // could leak
 			continue ;
 
 		add_history(entered_line);
