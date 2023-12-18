@@ -6,7 +6,7 @@
 #    By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 10:22:25 by fbock             #+#    #+#              #
-#    Updated: 2023/12/12 10:43:48 by fbock            ###   ########.fr        #
+#    Updated: 2023/12/18 14:55:11 by fbock            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@
 NAME = libft.a
 DNAME = libft_debug.a
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+# CFLAGS = -Wall -Wextra -Werror
 DFLAGS = -g3
 HEADERS = -I./includes
 
