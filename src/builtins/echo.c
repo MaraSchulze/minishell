@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 14:58:11 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 17:30:36 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 19:09:44 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 // string beforehand.
 bool	echo(const char *after_echo, bool n_flag)
 {
-	int error;
+	int	error;
 
 	if (!n_flag)
 		error = printf("%s\n", after_echo);

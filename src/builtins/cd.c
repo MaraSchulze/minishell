@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 15:16:14 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 17:30:27 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/18 19:09:39 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // returns absolute path
 bool	cd(const char *entered_path_arg)
 {
-	int error;
+	int	error;
 
 	error = chdir(entered_path_arg);
 	if (error == -1)
