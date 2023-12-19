@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/19 09:59:45 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/19 11:58:26 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(int argc, char **argv, char **envp)
 {
-	t_pipe 	parsed_command;
+	t_pipe 	task;
 	char	*entered_line;
 
 	// signal handlers
@@ -29,7 +29,7 @@ int	main(int argc, char **argv, char **envp)
 		free(entered_line);
 		continue ;
 
-		// if (!parse_line(entered_line, &parsed_command))
+		// if (!parse_line(entered_line, &task))
 		// 	continue ;
 		// execute_line(parsed_command);
 	}
