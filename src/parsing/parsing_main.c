@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:17:21 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 17:30:22 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/19 09:14:16 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ bool	parse_line(char *entered_line, t_pipe parsed_command)
 
 	while (*tokens)  // check if token is builtin before creating processes...
 	{
-		return (true);
+
 	}
 	return (true);
 }
