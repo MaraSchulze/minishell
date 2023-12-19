@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:38:47 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 17:32:31 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/19 10:06:55 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char *read_a_line(char *prompt)
 
 	while (1)
 	{
-		// entered_line = readline(prompt);
+		entered_line = readline(prompt);
 		if (!entered_line)  // some kind of error
 			continue ;
 		if (!(*entered_line))  // empty line, will not be used

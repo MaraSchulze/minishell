@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 19:05:41 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/19 09:59:45 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	main(int argc, char **argv, char **envp)
 		free(entered_line);
 		continue ;
 
-		if (!parse_line(entered_line, &parsed_command))
-			continue ;
+		// if (!parse_line(entered_line, &parsed_command))
+		// 	continue ;
 		// execute_line(parsed_command);
 	}
 

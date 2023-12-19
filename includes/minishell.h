@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 19:56:19 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/19 10:07:13 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,12 @@
 #include <termios.h>
 #include "libft.h"
 
-#define SHELL_PROMPT "minishell$"
+#define SHELL_PROMPT "minishell$ "
 #define	CWD_BUFFER_SIZE 1000
+
+typedef struct s_parsing {
+	char **tokens;
+}	t_parsing;
 
 typedef struct s_process {
 	char 	*name;
@@ -51,7 +55,7 @@ char	*read_a_line(char *prompt);
 bool	echo(const char *after_echo, bool n_flag);
 
 // cd.c
-bool	cd(const char *entered_path_arg);
+bool	cd(char *entered_path_arg);
 
 // pwd.c
 bool	pwd(void);
