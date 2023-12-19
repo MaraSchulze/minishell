@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:17:21 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/19 10:35:24 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/19 10:55:59 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ bool	parse_line(char *entered_line, t_pipe parsed_command)
 	{
 
 
-		input.tokens++;
+		tokens++;
 	}
 	return (true);
 }
