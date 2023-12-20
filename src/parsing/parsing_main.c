@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:17:21 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/20 14:57:19 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/20 15:27:12 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,6 +160,7 @@ bool	parse_line(char *entered_line, t_pipe *task)
 			argv_buf[buf_i] = '\0';
 			task->processes[task->p_amount].argv = append_string(task->processes[task->p_amount].argv, argv_buf);
 		}
+
 		else if (entered_line[line_i] == 39)
 		{
 			line_i++;
@@ -194,6 +195,7 @@ bool	parse_line(char *entered_line, t_pipe *task)
 			argv_buf[buf_i] = '\0';
 			task->processes[task->p_amount].argv = append_string(task->processes[task->p_amount].argv, argv_buf);
 		}
+
 		else if (entered_line[line_i] == '|')
 		{
 			line_i++;
@@ -201,6 +203,7 @@ bool	parse_line(char *entered_line, t_pipe *task)
 			task->p_amount++;
 		}
 		printf("parsed once\n");
+
 	}
 	return (true);
 }
