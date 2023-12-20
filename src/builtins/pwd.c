@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   pwd.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
+/*   By: marschul <marschul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 15:31:48 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/18 15:42:42 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/20 15:55:20 by marschul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-bool	pwd(void)
+bool	pwd(char **argv)
 {
 	char	buffer[CWD_BUFFER_SIZE];
 	char	*getcwd_retv;
@@ -24,7 +24,7 @@ bool	pwd(void)
 		perror("Error getting path.");
 		return (false);
 	}
-	error = printf("%s\n", buffer);
+	error = ft_printf("%s\n", buffer);
 	if (error < 0)
 	{
 		perror("Error printing path.");
