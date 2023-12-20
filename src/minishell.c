@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/19 11:58:26 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/20 14:25:42 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int	main(int argc, char **argv, char **envp)
 	while (1)
 	{
 		entered_line = read_a_line(SHELL_PROMPT);
-
-		// testing of readline
-		printf("%s\n", entered_line);
 		add_history(entered_line);
+		if (!entered_line)
+			continue ;
+
 		free(entered_line);
 		continue ;
 
