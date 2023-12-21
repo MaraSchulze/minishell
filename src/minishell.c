@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/20 15:30:27 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/21 14:43:47 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ int	main(int argc, char **argv, char **envp)
 		// 	continue ;
 		// execute_line(parsed_command);
 	}
-
 	free_old_env(NULL);
 	return (0);
 }
