@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 15:38:28 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/21 12:42:13 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/21 12:48:24 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ static bool	check_rest(t_parsing *pd)
 	if (pd->entered_line[pd->line_i] == ' ')
 	{
 		pd->line_i++;
-		while (!ft_isdelimiter(pd->entered_line[pd->line_i]))
+		while (!ft_isdelimiter(pd->entered_line[pd->line_i]) && pd->entered_line[pd->line_i])
 		{
 			pd->buffer[pd->buffer_i++] = pd->entered_line[pd->line_i];
 			pd->line_i++;
