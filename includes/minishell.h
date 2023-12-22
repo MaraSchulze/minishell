@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/22 13:53:22 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/22 14:15:51 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef bool (*t_function_pointer)(char **argv);
 typedef struct s_process {
 	char 	*name;
 	char 	**argv;
+	char	**env;
 	t_function_pointer	inbuilt;
 }	t_process;
 
