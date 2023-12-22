@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 13:08:19 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/22 13:53:28 by fbock            ###   ########.fr       */
+/*   Updated: 2023/12/22 14:35:48 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ void	parse_heredoc(t_parsing *pd)
 	while (pd->entered_line[pd->line_i] && !ft_isdelimiter(pd->entered_line[pd->line_i]))
 	{
 		pd->buffer[pd->buffer_i] = pd->entered_line[pd->line_i];
+		pd->buffer_i++;
 		(pd->line_i)++;
 	}
 	pd->buffer[pd->buffer_i] = '\0';
