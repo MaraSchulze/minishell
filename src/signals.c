@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parsing_utils.c                                    :+:      :+:    :+:   */
+/*   signals.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
+/*   By: marschul <marschul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/03 11:10:41 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 12:04:00 by fbock            ###   ########.fr       */
+/*   Created: 2023/12/29 17:07:12 by marschul          #+#    #+#             */
+/*   Updated: 2023/12/30 23:29:41 by marschul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-void	init_parsing_data(t_parsing *data, t_pipe *task, char *input)
+void sigint_handler(int signum)
 {
-	task->processes[task->p_amount].argv = NULL;
-	data->line_i = 0;
-	data->buffer_i = 0;
-	data->new_proc = true;
-	data->task = task;
-	data->u_input = input;
-	ft_memset(data->buffer, '\0', PROC_FIELD_BUFFER);
+    ft_printf("\nCtrl+C was pressed. We need a new prompt.\n");
+}
+
+void	register_signal_handlers(void)
+{
+	signal(SIGINT, sigint_handler);
+	signal(SIGQUIT, SIG_IGN);
 }

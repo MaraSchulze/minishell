@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 11:28:02 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 12:04:12 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ int	main(int argc, char **argv, char **envp)
 	t_pipe 	task;
 	char	*entered_line;
 
-	// signal handlers
+	// register signal handlers
+	register_signal_handlers();
 
 	while (1)
 	{
