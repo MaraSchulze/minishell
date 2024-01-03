@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:18:02 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 11:22:37 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 17:35:38 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ static void *free_on_error(char **to_free, int from_index)
 {
 	while (from_index > 0)
 	{
-		free(to_free[from_index]);
 		index--;
+		free(to_free[from_index]);
 	}
 	free(to_free);
 	return (NULL);
