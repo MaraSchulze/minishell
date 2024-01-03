@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/22 14:39:23 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 11:28:02 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int	main(int argc, char **argv, char **envp)
 			continue ;
 		if (!parse_line(entered_line, &task))
 			continue ;
+
 		// for (size_t i = 0; i < task.p_amount; i++)
 		// {
 		// 	printf("process %zu: %s\n", i, task.processes[i].name);
