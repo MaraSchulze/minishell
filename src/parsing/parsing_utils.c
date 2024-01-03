@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:10:41 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 17:27:23 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 17:47:20 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,12 @@ bool	add_to_argv(t_parsing *p)
 	*current_argv = append_string(*current_argv, buffer);
 	if (!(*current_argv))
 		return (false);
+	return (true);
+}
+
+bool	handle_pipe(t_parsing *p)
+{
+	p->inp_i++;
+	p->new_proc = true;
 	return (true);
 }
