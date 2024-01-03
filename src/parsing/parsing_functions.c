@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:40:15 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 15:00:04 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 15:26:29 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,23 @@ bool	parse_name(t_parsing *p)
 
 bool	parse_delimiter(t_parsing *p)
 {
-	if (!(p->u_input))
+	char	current_c;
+
+	current_c = p->u_input[p->inp_i];
+	if (!current_c)
+		return (true);
+	else if (current_c == '>')
+
+	else if (current_c == '<')
+
+	else if (current_c == '|')
+
+	else if (current_c == '$')
+
+	else if (current_c == '"')
+
+	else if (current_c == 39)
+
+	else
+
 }
