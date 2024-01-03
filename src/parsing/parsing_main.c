@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:03:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 12:13:13 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 13:53:44 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ bool	parsing_main(char *input, t_pipe *task)
 	t_parsing	p;
 
 	init_parsing_data(&p, task, input);
-	while (input && input[p.line_i])
+	while (input && input[p.inp_i])
 	{
 
 	}

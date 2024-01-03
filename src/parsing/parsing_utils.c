@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:10:41 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 12:04:00 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/03 13:48:09 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	init_parsing_data(t_parsing *data, t_pipe *task, char *input)
 {
 	task->processes[task->p_amount].argv = NULL;
-	data->line_i = 0;
+	data->inp_i = 0;
 	data->buffer_i = 0;
 	data->new_proc = true;
 	data->task = task;
