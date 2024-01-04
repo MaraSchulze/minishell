@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 16:34:57 by fbock             #+#    #+#             */
-/*   Updated: 2023/12/22 13:19:08 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/04 16:22:25 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char **append_string(char **orig, char *str)
 bool	ft_isdelimiter(char c)
 {
 	if (c == '|' || c == '<' || c == '>' || c == 39 || c == '"' || c == ' '
-		|| c == '<' || c == '>' || c == '\0')
+		|| c == '<' || c == '>' || c == '\0' || c == '$')
 		return (true);
 	return (false);
 }
