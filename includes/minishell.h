@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 18:00:49 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/04 11:58:05 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,9 @@ bool	handle_pipe(t_parsing *p);
 // parsing_functions.c
 bool	parse_name(t_parsing *p);
 bool	parse_delimiter(t_parsing *p);
+
+// quote_parsing.c
+bool	parse_single_quote(t_parsing *p);
 
 // array_utils.c
 char 	**append_string(char **orig, char *str);

@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:28:44 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/03 18:14:32 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/04 12:05:08 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,17 +40,17 @@ int	main(int argc, char **argv, char **envp)
 		if (!parsing_main(entered_line, &task))
 			continue ;
 
-		// for (size_t i = 0; i < task.p_amount; i++)
-		// {
-		// 	printf("argv:");
-		// 	while (task.processes[i].argv && *task.processes[i].argv)
-		// 	{
-		// 		printf(" %s", *task.processes[i].argv);
-		// 		task.processes[i].argv++;
-		// 	}
-		// 	printf("\n");
-		// }
-		// continue;
+		for (size_t i = 0; i < task.p_amount; i++)
+		{
+			printf("argv:");
+			while (task.processes[i].argv && *task.processes[i].argv)
+			{
+				printf(" %s", *task.processes[i].argv);
+				task.processes[i].argv++;
+			}
+			printf("\n");
+		}
+		continue;
 
 		execute_line(&task);
 		// free(entered_line);
@@ -63,3 +63,5 @@ int	main(int argc, char **argv, char **envp)
 	free_old_env(NULL);
 	return (0);
 }
+
+//  a b c d e 'abcd e' | test 'ls' | 'hallo
