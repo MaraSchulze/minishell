@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:40:15 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/08 12:07:39 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/08 13:04:20 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,9 @@ bool	parse_delimiter(t_parsing *p)
 	if (p->new_proc)  // in case first char in line is a delimiter
 		p->new_proc = false;
 	else if (current_c == '>')  // ouptput
-		return (parse_out_redirect(p));  // tbd
+		return (parse_out_redirect(p));
 	else if (current_c == '<')  // input
-		return (false);  // tbd
+		return (parse_in_redirect(p));
 	else if (current_c == '|')
 		return (handle_pipe(p));
 	else if (current_c == '$')
