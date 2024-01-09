@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 13:01:57 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/09 11:58:52 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/09 16:28:27 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,7 +125,7 @@ static void	parse_assignment(t_parsing *p, char *assignment_buffer,
 
 	while (p->u_input[p->inp_i] && p->u_input[p->inp_i] != ' ')
 	{
-		if (p->u_input[p->inp_i++] == '$')
+		if (p->u_input[p->inp_i] == '$' && p->inp_i++)
 		{
 			if (p->u_input[p->inp_i] == ' ')
 			{
