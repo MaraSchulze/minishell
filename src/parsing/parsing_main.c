@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:03:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/08 17:48:40 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/09 15:27:03 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ bool	parsing_main(char *input, t_pipe *task)
 		if (p.new_proc)
 			create_new_process(&p);
 	}
+	if (!p.task->processes[0].argv)
+		return (false);
 	create_new_process(&p);
 	return (true);
 }
