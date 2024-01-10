@@ -6,12 +6,11 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 17:59:04 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/09 16:28:17 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/10 12:55:27 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
-
 
 bool	ft_isdelimiter(char c)
 {
