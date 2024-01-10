@@ -6,13 +6,13 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/29 17:59:20 by marschul          #+#    #+#             */
-/*   Updated: 2024/01/10 13:37:12 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/10 14:00:52 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-static void	set_exit_value(unsigned char *exit_value, char **argv)
+static void	set_exit_var(unsigned char *exit_value, char **argv)
 {
 	int	i;
 
@@ -45,7 +45,7 @@ bool	_exit_(char **argv, t_pipe *pipe_struct,
 			exit_value = 255;
 		}
 		else
-			set_exit_value(&exit_value, argv);
+			set_exit_var(&exit_value, argv);
 	}
 	else
 		exit_value = 0;

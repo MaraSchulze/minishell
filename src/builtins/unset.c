@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 19:25:06 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/10 13:52:18 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/10 14:00:02 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static bool	alloc_new_environ(size_t env_size, char *variable_name)
 	new_environ = malloc((sizeof(char *) * (env_size - 1)) + sizeof(void *));
 	if (!new_environ)
 		return (false);
-	if (!init_new_environ(variable_name, *new_environ, environ, env_size))
+	if (!init_new_environ(variable_name, new_environ, environ, env_size))
 	{
 		free(new_environ);
 		return (false);
