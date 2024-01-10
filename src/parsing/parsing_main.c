@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:03:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/09 16:13:56 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/10 12:54:09 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ bool	parsing_main(char *input, t_pipe *task)
 	while (input && input[p.inp_i])
 	{
 		skip_whitespace(&p);
-		if (p.new_proc && input[p.inp_i] &&
-			!ft_isdelimiter(input[p.inp_i]))
+		if (p.new_proc && input[p.inp_i]
+			&& !ft_isdelimiter(input[p.inp_i]))
 		{
 			if (!parse_name(&p))
 				return (free_all_argvs(p.task));
