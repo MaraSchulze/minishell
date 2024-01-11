@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:03:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/11 15:06:47 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/11 16:41:35 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ bool	parsing_main(char *input, t_pipe *task)
 		if (p.new_proc)
 			create_new_process(&p);
 	}
-	printf("ioamount: %li\n", p.task->processes[0].io_amount);
 	if (!p.task->processes[0].argv && p.task->processes[0].io_amount < 1)
 		return (false);
 	create_new_process(&p);

@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 17:16:32 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/11 11:50:09 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/11 16:51:22 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ static bool	traverse_trough_iname(t_parsing *p, char *buffer, size_t *buffer_i)
 		if (p->u_input[p->inp_i] == '$')
 			fill_env_in_buffer(p, buffer, buffer_i);
 		else if (p->u_input[p->inp_i] == 39)
-			success = parse_out_singlequotes(p, buffer, buffer_i);
+			success = parse_single_quote(p, buffer, buffer_i);
 		else if (p->u_input[p->inp_i] == '"')
-			success = parse_out_doublequotes(p, buffer, buffer_i);
+			success = parse_double_quote(p, buffer, buffer_i);
 		else
 			buffer[(*buffer_i)++] = p->u_input[p->inp_i++];
 	}

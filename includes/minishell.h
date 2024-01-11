@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 09:07:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/11 14:39:30 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/11 16:50:41 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,8 +114,6 @@ bool	parse_with_quotes(t_parsing *p);
 // parse_out_redirects.c
 bool	parse_out_redirect(t_parsing *p);
 bool	parse_in_redirect(t_parsing *p);
-bool	parse_out_singlequotes(t_parsing *p, char *buffer, size_t *buff_i);
-bool	parse_out_doublequotes(t_parsing *p, char *buffer, size_t *buff_i);
 
 // parse_in_redirect.c
 bool	parse_in_redirect(t_parsing *p);
