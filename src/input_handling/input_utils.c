@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 13:38:47 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/10 12:53:32 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/11 17:37:44 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static void	check_if_ctrld(char *entered_line)
 	if (entered_line == 0)
 	{
 		free(entered_line);
+		free_old_env(NULL);
 		exit(EXIT_SUCCESS);
 	}
 }
