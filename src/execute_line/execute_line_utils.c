@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   execute_line_utils.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marschul <marschul@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 13:07:01 by marschul          #+#    #+#             */
-/*   Updated: 2024/01/11 14:18:16 by marschul         ###   ########.fr       */
+/*   Updated: 2024/01/11 16:54:42 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	free_processes(t_pipe *pipe_struct)
 {
-	size_t i;
+	size_t	i;
 	long	j;
 
 	i = 0;
