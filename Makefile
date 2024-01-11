@@ -6,7 +6,7 @@
 #    By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/18 08:57:25 by fbock             #+#    #+#              #
-#    Updated: 2024/01/11 14:34:57 by fbock            ###   ########.fr        #
+#    Updated: 2024/01/11 17:05:32 by fbock            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME	:= minishell
 
 CC 		:= cc
 CFLAGS 	:= -Wall -Wextra -Werror
-DFLAGS 	:= -g3 -fsanitize=address
+DFLAGS 	:= -g3 # -fsanitize=address
 DNAME 	:= minishell_debug
 HEADERS = -I./includes -I ./libs/libft/includes
 
