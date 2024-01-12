@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:40:15 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/12 14:25:07 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/12 14:39:04 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,6 @@ bool	parse_delimiter(t_parsing *p)
 		return (handle_pipe(p));
 	else if (current_c == '$')
 		return (parse_env_var(p));
-	// else if (current_c == '"' || current_c == 39)
-	// 	return (parse_with_quotes(p));
 	else
 		return (parse_remaining(p));
 	return (true);

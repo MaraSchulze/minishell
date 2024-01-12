@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:10:41 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/12 14:24:44 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/12 14:30:57 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,11 @@ bool	free_all_argvs(t_pipe *task)
 bool	handle_pipe(t_parsing *p)
 {
 	p->inp_i++;
+	if (!p->u_input[p->inp_i])
+	{
+		printf("Minishell: syntax error near unexpected token '|'\n");
+		return (false);
+	}
 	p->new_proc = true;
 	return (true);
 }
