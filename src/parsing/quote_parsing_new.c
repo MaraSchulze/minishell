@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 11:50:48 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/11 14:23:36 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/12 10:12:24 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ bool	parse_double_quote(t_parsing *p, char *buffer, size_t *buffer_i)
 	return (true);
 }
 
-bool	parse_with_quotes(t_parsing *p)
+bool	parse_remaining(t_parsing *p)
 {
 	char	buffer[PROC_FIELD_BUFFER];
 	size_t	buffer_i;
