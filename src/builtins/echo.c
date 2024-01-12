@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 14:58:11 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/10 13:37:01 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/11 19:01:00 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ bool	echo(char **argv)
 	int		i;
 	bool	n_flag;
 
+	n_flag = false;
 	if (argv[1] != NULL && ft_strncmp("-n", argv[1], 3) == 0)
 	{
 		n_flag = true;
