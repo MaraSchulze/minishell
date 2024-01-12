@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 12:46:10 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/12 14:22:09 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/12 14:46:22 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ bool	fill_buffer(char *buffer, size_t buffer_s, t_parsing *p)
 		else
 			buffer[buffer_i++] = p->u_input[p->inp_i++];
 	}
+	printf("BUFFER: %s\n", buffer);
 	return (true);
 }
 
