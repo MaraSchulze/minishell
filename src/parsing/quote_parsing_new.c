@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 11:50:48 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/12 15:17:27 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/16 12:28:20 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ bool	add_buffer_to_argv(t_parsing *p, char *buffer)
 	return (true);
 }
 
+// skip_whitespace(p);
 bool	parse_single_quote(t_parsing *p, char *buffer, size_t *buffer_i)
 {
 	p->inp_i++;
-	skip_whitespace(p);
 	while (p->u_input[p->inp_i] && p->u_input[p->inp_i] != 39)
 		buffer[(*buffer_i)++] = p->u_input[(p->inp_i)++];
 	if (p->u_input[p->inp_i] != 39)
@@ -51,10 +51,10 @@ void	fill_env_buffer(char *buffer, t_parsing *p)
 	}
 }
 
+// skip_whitespace(p);
 bool	parse_double_quote(t_parsing *p, char *buffer, size_t *buffer_i)
 {
 	p->inp_i++;
-	skip_whitespace(p);
 	while (p->u_input[p->inp_i] && p->u_input[p->inp_i] != '"')
 	{
 		if (p->u_input[p->inp_i] == '$')
