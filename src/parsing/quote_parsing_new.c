@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 11:50:48 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/16 12:28:20 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/16 12:33:58 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,8 @@ void	fill_env_buffer(char *buffer, t_parsing *p)
 	size_t	buffer_i;
 
 	buffer_i = 0;
-
 	while (p->u_input[p->inp_i] && p->u_input[p->inp_i] != 39
-			&& p->u_input[p->inp_i] != '"' && p->u_input[p->inp_i] != ' ')
+		&& p->u_input[p->inp_i] != '"' && p->u_input[p->inp_i] != ' ')
 	{
 		buffer[buffer_i++] = p->u_input[p->inp_i++];
 	}
