@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:03:45 by fbock             #+#    #+#             */
-/*   Updated: 2024/01/11 16:41:35 by fbock            ###   ########.fr       */
+/*   Updated: 2024/01/30 18:22:11 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ bool	parsing_main(char *input, t_pipe *task)
 	t_parsing	p;
 
 	init_parsing_data(&p, task, input);
+	// printf("Input: %s\n", input);
 	while (input && input[p.inp_i])
 	{
 		skip_whitespace(&p);
