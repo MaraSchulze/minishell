@@ -2,7 +2,7 @@
 Implementation of a mini shell program in C as a group project in the 42 school core curriculum.  
 We implemented a bash like behaviour with |, <, >, <<, >>, and '...' and "...".  
 The shell has builtins like echo, cd, pwd, export, unset, env, exit.  
-Also we implemented the signals CTRL+C, CTRL+D, CTRL+\, environment variables and exit codes.  
+Also we implemented the signals CTRL+C, CTRL+D, CTRL+\\, environment variables and exit codes.  
 The shell can run headless.  
 
 ## We passed with 100%
