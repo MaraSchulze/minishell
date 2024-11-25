@@ -6,7 +6,7 @@ Also we implemented the signals CTRL+C, CTRL+D, CTRL+\, environment variables an
 The shell can run headless.  
 
 ## We passed with 100%
-![Success photo](ScreenshotMinishell.png)
+<img src="ScreenshotMinishell.png" alt="Success Photo" width="200">
 
 ## Usage
 This project was written for and compiled on a Mac.  
