@@ -5,6 +5,9 @@ The shell has builtins like echo, cd, pwd, export, unset, env, exit.
 Also we implemented the signals CTRL+C, CTRL+D, CTRL+\, environment variables and exit codes.  
 The shell can run headless.  
 
+## We passed with 100%
+![Success photo](ScreenshotMinishell.png)
+
 ## Usage
 This project was written for and compiled on a Mac.  
 ```
